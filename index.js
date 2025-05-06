@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost:27017/griculture").then(() => {
+mongoose.connect("mongodb+srv://sanketbhimani92:sanketatlas9@cluster0.jh7pq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(() => {
     console.log("Connected to MongoDB");
 }).catch((error) => {
     console.error("Error connecting to MongoDB:", error);
