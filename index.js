@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const technologyRoutes = require('./Technology/technology'); // Correct path
+const technologyRoutes = require('./Technology/technology'); 
 const categoriesRoutes = require('./ProductCategory/category');
 const productRoutes = require('./Products/products');
 const userRoutes = require('./User/user');
@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect("mongodb+srv://sanketbhimani92:sanketatlas9@cluster0.jh7pq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(() => {
+mongoose.connect("mongodb+srv://sanketbhimani92:sanketatlas9@cluster0.jh7pq.mongodb.net/Agriculture_Database?retryWrites=true&w=majority&appName=Cluster0").then(() => {
     console.log("Connected to MongoDB");
 }).catch((error) => {
     console.error("Error connecting to MongoDB:", error);
